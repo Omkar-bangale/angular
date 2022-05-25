@@ -1,0 +1,15 @@
+<!--registered-users works!</p -->
+<ol class="list-group">
+    <li *ngFor="let u of users; index as i " class="list-group-item list-group-item-primary">
+ <span>Name: {{u.firstName}}&nbsp;{{u.lastName}}</span>       
+<span> DOB : {{u.birthdate}}</span> 
+<br/>
+<span> Email : {{u.email}}</span>
+
+<br/>
+
+<!--button type="button" style="margin: 1%; text-align: center;" class="btn btn-danger" (click)="deleteRow(u, u.id)">Delete</button -->
+    </li>
+    <br/>
+   <br/>
+</ol>
